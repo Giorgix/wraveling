@@ -94,6 +94,13 @@
   height: 8px;
 }
 
+.list--inline {
+  margin-left: 0;
+  li {
+    display: inline-block;
+  }
+}
+
 .drawer-list-item {
   font-family: $title-font-family;
   font-weight: 700;
@@ -144,7 +151,7 @@
       vertical-align: sub;
       text-align: left;
       font-size: 22px;
-      width: 1.2857142857142858em; //fixed width icon
+      //width: 1.2857142857142858em; //fixed width icon
     }
   }
 }

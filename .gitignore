@@ -44,7 +44,10 @@ build/Release
 # Dependency directory
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git-
 node_modules
+_components
 
+ghost-dev.db
+ghost-dev.db-journal
 # Created by https://www.gitignore.io
 
 ### vim ###

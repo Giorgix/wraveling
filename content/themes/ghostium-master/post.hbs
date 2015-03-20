@@ -2,6 +2,11 @@
 
 <section class="wrapper wrapper-post">
   <div class="wrapper-container">
+    <div class="text-center">
+      <a href="/">
+        <i class="fa fa-5x fa-home"></i>
+      </a>
+    </div>
     <article itemscope itemtype="http://schema.org/BlogPosting" role="article" class="post {{post_class}}">
       {{#post}}
         <section class="post-container">
@@ -31,12 +36,12 @@
           <aside class="post-side">
             <div class="post-author">
               {{#if author.image}}
-                <a href="{{author.website}}" class="post-author-avatar">
+                <a href="/about" class="post-author-avatar">
                   <img src="{{author.image}}" alt="{{author.name}}">
                 </a>
               {{/if}}
               <div class="post-author-info">
-                <a href="{{author.website}}" class="post-author-name">
+                <a href="/about" data-pjax class="post-author-name">
                   {{author.name}}
                 </a>
                 <p class="post-author-bio">{{author.bio}}</p>
@@ -49,13 +54,13 @@
           <footer class="post-footer">
             <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="post-author">
               {{#if author.image}}
-                <a href="{{author.website}}" class="post-author-avatar">
+                <a href="/about" class="post-author-avatar">
                   <img itemprop="image" src="{{author.image}}" alt="{{author.name}}">
                 </a>
               {{/if}}
               <div class="post-author-info">
                 <h4 class="post-footer-heading">Written By</h4>
-                <a href="{{author.website}}" itemprop="url" class="post-author-name">
+                <a href="/about" itemprop="url" class="post-author-name">
                   <span itemprop="name">{{author.name}}</span>
                 </a>
                 <p itemprop="description" class="post-author-bio">{{author.bio}}</p>
