@@ -30,6 +30,7 @@
   width: 100%;
   color: #fff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.30);
 
   @include breakpoint(medium) {
     text-align: center;
