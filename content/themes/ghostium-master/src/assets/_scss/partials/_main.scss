@@ -105,3 +105,45 @@ body {
     }
   }
 }
+.page-header {
+  // background-color: #000000;
+  background: url('/content/images/header.jpg') no-repeat center center;
+  background-size: cover;
+  display: table;
+  height: 200px;
+  width: 100%;
+}
+a.centered-icon {
+  display: table-cell;
+  vertical-align: middle;
+  transition: all 0.5s ease-in-out 0s;
+}
+.icon-text {
+  font-family: $title-font-family;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-size: 2rem;
+  display: none;
+}
+a.centered-icon {
+  &:hover, 
+  &:focus {
+    //transform: rotate(180deg);
+    transform: translateY(20px);
+  }
+}
+a.centered-icon {
+  &:hover, 
+  &:focus { 
+    span .fa-home {
+      display: none;
+    }
+  }
+}
+a.centered-icon {
+  &:hover, &:focus { 
+    .icon-text {
+      display: block;
+    }
+  }
+}
